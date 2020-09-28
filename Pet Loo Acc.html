@@ -1,0 +1,415 @@
+<style>
+    @media (min-width: 992px) {
+        .row_1 {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            display: inline-block;
+            margin-top: -30px;
+            max-width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            bottom: -10%;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+        }
+
+        .textBorder {
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+            width: 100%;
+            height: 245px;
+            padding: 10px;
+
+        }
+
+        .textBorder h3,
+        .textBorder ul,
+        .textBorder p {
+            font-family: inherit;
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            margin: 10px 0px 0px 0px !important;
+        }
+
+        .textContainer {
+            height: fit-content;
+            padding-top: 30px;
+        }
+
+        .textContainer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .categoryDescriptionMobile {
+            display: none;
+        }
+
+        .categoryDescriptionTablet {
+            display: none;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 30px 10px 30px;
+        }
+
+        .topSection {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            display: inline-flex;
+            position: relative;
+            top: -45px;
+        }
+
+        .mainText {
+            width: 33%;
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .mainText h4 {
+            font-size: 16px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .headingText {
+            text-align: center;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            font-size: xx-large;
+        }
+
+        .headingText p {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            width: auto;
+            height: 50px;
+        }
+
+        .petLoo {
+            text-align: center;
+        }
+
+        .petLooRight img {
+            float: right;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .categoryDescriptionDesktop {
+            display: none;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            width: 100%;
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .textBorder {
+            width: 100%;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .textBorder p {
+            padding: 5px;
+        }
+
+        .category-description iframe {
+            margin-top: 0px !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+            max-width: 100%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+
+        .imageContainer {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 15px 10px 15px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: 50%;
+            min-width: 200px
+        }
+
+        .headingText {
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            margin-top: 5px;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: fit-content;
+            width: auto;
+            height: 50px;
+        }
+
+        .mainText {
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .topSection {
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            position: relative;
+            top: -45px;
+        }
+
+        .petLoo {
+            text-align: center;
+        }
+
+        .petLooRight img {
+            float: right;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+        .textBorder {
+            height: 250px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1024px) {
+        .roundedImage {
+            max-width: 100%;
+            height: 161px;
+        }
+    }
+</style>
+<div class="categoryDescriptionDesktop">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-inside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Replacement Grass</h3>
+                    <ul>
+                        <li>Available in small, medium and large sizes to fit all three Pet Loo sizes.</li>
+                        <li>Easy to clean. Simply wash the Pet Loo down with a hose until liquid runs clear.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-on-balcony.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Pee Pods and Wee Sponge</h3>
+                    <ul>
+                        <li>Pee Pods are disposable & biodegradable containers that fit in the reservoir of all pet loo
+                            sizes - Comes in a pack of 7.</li>
+                        <li>Wee Sponge is an absorbent powder designed to solidify urine for easy clean up and odour
+                            control. Pour a small amount in the Pee Pad container.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_3">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-outside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Wee Care and Skip to my Loo</h3>
+                    <ul>
+                        <li>Skip to my Loo - Pet Attractant.</li>
+                        <li>Wee Care - Cleans & sanitises your pet's toileting area.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="categoryDescriptionMobile">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-inside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Replacement Grass</h3>
+                    <ul>
+                        <li>Available in small, medium and large sizes to fit all three Pet Loo sizes.</li>
+                        <li>Easy to clean. Simply wash the Pet Loo down with a hose until liquid runs clear.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Pee Pods and Wee Sponge</h3>
+                    <ul>
+                        <li>Pee Pods are disposable & biodegradable containers that fit in the reservoir of all pet loo
+                            sizes - Comes in a pack of 7.</li>
+                        <li>Wee Sponge is an absorbent powder designed to solidify urine for easy clean up and odour
+                            control. Pour a small amount in the Pee Pad container.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_3 pad20">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Wee Care and Skip to my Loo</h3>
+                    <ul>
+                        <li>Skip to my Loo - Pet Attractant.</li>
+                        <li>Wee Care - Cleans & sanitises your pet's toileting area.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-12">
+        <h2><strong>The Pet Loo - A Backyard in a Box!</strong></h2>
+        <p>The Pet Loo is a simple and convenient solutions for people who live in abodes where they may not have fast
+            and ready access to suitable ablutions for their pets. The Pet Loo is portable so you can put it anywhere
+            your dog likes to go, also you can take it outside, on holidays almost anywhere!</p>
+    </div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-3"><a href="/the-pet-loo"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/RPG03_1.jpg&quot;}}" alt="The Pet Loo - Backyard in a  box" /></a></div>
+    <div class="col-xs-12 col-md-6">
+        <h2><strong>Pet Loo Replacement Grass</strong></h2>
+        <p>The top of the Pet Loo is artificial grass and is easy replaceable should you decide it is necessary. The
+            grass is specially designed with little holes allowing free flowing drainage of urine to the waste
+            container. There is no life span, the replacement grass can be used as long as you like. When the time comes
+            you can simply order a new grass mat to the size of your Pet Loo and keep the happy marriage of you and your
+            pet free from toilet arguments.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 petLooRight"><a href="/the-pet-loo/pet-loo-replacement-grass/"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/replacement-grass-pet-loo.jpg&quot;}}" alt="Replacement Grass" /></a>
+    </div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-3"><a href="/the-pet-loo"><img
+                style="width: 199px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/petloo_grass.jpg&quot;}}" alt="The Pet Loo - Backyard in a  box" /></a>
+    </div>
+    <div class="col-xs-12 col-md-6 pad20 petLoo">
+        <h2><strong>Pet Loo Replacement Grass Care</strong></h2>
+        <p>Biodegradable cleaners such as the Wee Care and Kitty Care, use enzymes to break down organic material from
+            your pet, easily and quickly. To clean the Pet Loo:</p>
+        <ul style="line-height: 20.7999992370605px;">
+            <li
+                style="margin: 0cm 0cm 7.5pt; line-height: 15pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                <span style="color: #008000;">Pour warm water over the grass daily to flush out excess urine</span></li>
+            <li
+                style="margin: 0cm 0cm 7.5pt; line-height: 15pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                <span style="color: #008000;">​A few times a week, thoroughly spray The Pet Loo &amp; grass with WEE
+                    Care or Kitty Care and let dry for 5-10mins.  </span></li>
+            <li
+                style="margin: 0cm 0cm 7.5pt; line-height: 15pt; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                <span style="color: #008000;">Weekly, remove the grass and wash down the Loo with a hose until liquid
+                    runs clear. Spray WEE Care or Kitty Care onto the unit and air out The Pet Loo, ensuring the grass
+                    is thoroughly dried before reusing.<span style="color: #ff0000;">  </span></span></li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-3 pad20"><a href="/the-pet-loo/pet-loo-replacement-grass/"><img
+        style="width: 304px; height: 200px; margin-right: 10px; margin-left: 10px;"
+        src="{{media url=&quot;wysiwyg/weecare.jpg&quot;}}" alt="Wee Care" /></a>
+    </div>
+</div>

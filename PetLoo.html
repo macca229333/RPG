@@ -1,0 +1,418 @@
+<style>
+    @media (min-width: 992px) {
+        .row_1 {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            display: inline-block;
+            margin-top: -30px;
+            max-width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            bottom: -10%;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+        }
+
+        .textBorder {
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+            width: 100%;
+            height: 245px;
+            padding: 10px;
+
+        }
+
+        .textBorder h3,
+        .textBorder ul,
+        .textBorder p {
+            font-family: inherit;
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            margin: 10px 0px 0px 0px !important;
+        }
+
+        .textContainer {
+            height: fit-content;
+            padding-top: 30px;
+        }
+
+        .textContainer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .categoryDescriptionMobile {
+            display: none;
+        }
+
+        .categoryDescriptionTablet {
+            display: none;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 30px 10px 30px;
+        }
+
+        .topSection {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            display: inline-flex;
+            position: relative;
+            top: -45px;
+        }
+
+        .mainText {
+            width: 33%;
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .mainText h4 {
+            font-size: 16px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .headingText {
+            text-align: center;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            font-size: xx-large;
+        }
+
+        .headingText p {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            width: auto;
+            height: 50px;
+        }
+
+        .petLoo {
+            text-align: center;
+        }
+
+        .petLooRight img {
+            float: right;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .categoryDescriptionDesktop {
+            display: none;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            width: 100%;
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .textBorder {
+            width: 100%;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .textBorder p {
+            padding: 5px;
+        }
+
+        .category-description iframe {
+            margin-top: 0px !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+            max-width: 100%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+
+        .imageContainer {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 15px 10px 15px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: 50%;
+            min-width: 200px
+        }
+
+        .headingText {
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            margin-top: 5px;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: fit-content;
+            width: auto;
+            height: 50px;
+        }
+
+        .mainText {
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .topSection {
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            position: relative;
+            top: -45px;
+        }
+
+        .petLoo {
+            text-align: center;
+        }
+
+        .petLooRight img {
+            float: right;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+        .textBorder {
+            height: 250px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1024px) {
+        .roundedImage {
+            max-width: 100%;
+            height: 161px;
+        }
+    }
+</style>
+<div class="categoryDescriptionDesktop">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-inside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>The Easy Way to Manage your Pet's Waste</h3>
+                    <p>Forget the messy pee pads, midnight toilet runs, and dirty flooring. The Pet Loo makes life
+                        easier for youand you pet by offering a convient, indoor potty solution - 24/7. </p>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-on-balcony.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Perfect for Small Small</h3>
+                    <p>Use the Pet Loo in your apartment, inside your home, on your patio, or even take it with you on
+                        holidays.</p>
+                    <p>Yes, it's portable too! The Pet Loo is available in 3 sizes, perfect for small to large pet dogs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block_3">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-outside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Why Buy From Us</h3>
+                    <ul>
+                        <li>Free Shipping Australia Wide</li>
+                        <li>Same Day Dispatch on orders placed before 2pm AEST</li>
+                        <li>Best Price Guarantee</li>
+                        <li>Genuine Pet Loo Products</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="categoryDescriptionMobile">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/the-pet-loo-dog-inside.jpg&quot;}}" alt=""
+                    width="311" height="177" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>The Easy Way to Manage your Pet's Waste</h3>
+                    <p>Forget the messy pee pads, midnight toilet runs, and dirty flooring. The Pet Loo makes life
+                        easier for youand you pet by offering a convient, indoor potty solution - 24/7. </p>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Perfect for Small Small</h3>
+                    <p>Use the Pet Loo in your apartment, inside your home, on your patio, or even take it with you on
+                        holidays.</p>
+                    <p>Yes, it's portable too! The Pet Loo is available in 3 sizes, perfect for small to large pet dogs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block_3 pad20">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Why Buy From Us</h3>
+                    <ul>
+                        <li>Free Shipping Australia Wide</li>
+                        <li>Same Day Dispatch on orders placed before 2pm AEST</li>
+                        <li>Best Price Guarantee</li>
+                        <li>Genuine Pet Loo Products</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-12">
+        <h2><br /><strong>The Pet Loo - A Backyard in a Box!</strong></h2>
+        <p>The Pet Loo is a simple and convenient solutions for people who live in abodes where they may not have fast
+            and ready access to suitable ablutions for their pets. The Pet Loo is portable so you can put it anywhere
+            your dog likes to go, also you can take it outside, on holidays almost anywhere!</p>
+    </div>
+</div>
+<p> </p>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-3"><a href="http://www.readypetgo.com.au/the-pet-loo"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/Sml_Med_PetLoo.jpg&quot;}}" alt="The Original Pet Loo" /></a></div>
+    <div class="col-xs-12 col-md-6">
+        <h2><strong>Original Pet Loo - Small, Medium &amp; Large - 3 Sizes Available</strong></h2>
+        <p>Select the Pet Loo size based on your pet's size and where you will be placing the Pet Loo. The small Pet Loo
+            suits small animals such as Cats, Guinea Pigs, Rabbits, Ferrets as well as small dogs. The small Pet Loo is
+            popular for small apartments, and narrow patios, or travelling in a caravan where space is limited. Choose
+            the medium for medium size dogs. The Large/Original size, suits large to medium size dogs.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 petLooRight"><a href="http://www.readypetgo.com.au/the-pet-loo"><img
+                style="width: 290px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/size_petloo_large.jpg&quot;}}"
+                alt="The Pet Loo - Backyard in a  box" /></a></div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-3"><a href="http://www.readypetgo.com.au/the-pet-loo-pee-pod-7-pack"><img
+                style="width: 200px; height: 186px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/PeePod.jpg&quot;}}" alt="The Pet Loo Pee Pod" /></a></div>
+    <div class="col-xs-12 col-md-6">
+        <h2><strong>Pet Loo Pee Pods &amp; Pup-Pee Solutions Enzyme Cleaning Range</strong></h2>
+        <p>The Pet Loo Pee Pods and Pup-Pee Solutions Enzymes Cleaners are developed to meet the needs of pet owners
+            using the Pet Loo. Train your pet with the unique Skip to My Loo Attactant, to encourage your puppy, cat or
+            dog to empty themselves in the designated area. The Pet Loo Pee Pods fit neatly inside the catchment jug of
+            your Pet Loo and includes absorbent powder called a Wee Sponge that traps liquids and odours in a gel for
+            easy disposal. Broad spectrum cleaning enzymes combat and break down stains and odours completely.
+            Biodegradable, the enzymes break down organic material from your pet, easily and quickly.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 petLooRight"><a href="/all-pet-loo-products/"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/enzyme-cleaners.jpg&quot;}}" alt="The Pet Loo - Enzyme Cleaners" /></a>
+    </div>
+</div>
+<div class="row pad20 petLoo">
+    <div class="col-xs-12 col-md-3"><a href="/the-pet-loo"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/RPG03_1_1.jpg&quot;}}" alt="The Pet Loo - Backyard in a  box" /></a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <h2><strong>Pet Loo Replacement Plush Grass</strong></h2>
+        <p>The top of the Pet Loo is artificial grass and is easy replaceable should you decide it is necessary. The
+            grass is specially designed with little holes allowing free flowing drainage of urine to the waste
+            container. There is no life span, it has been developed for optimum quality and specifically to reduce your
+            hassles. Use it as long as you like. When the time comes you can simply order a new grass mat to the size of
+            your Pet Loo and keep the happy marriage of you and your pet free from toilet arguments.</p>
+    </div>
+    <div class="col-xs-12 col-md-3 petLooRight"><a href="/the-pet-loo/pet-loo-replacement-grass/"><img
+                style="width: 200px; height: 200px; margin-right: 10px; margin-left: 10px;"
+                src="{{media url=&quot;wysiwyg/replacement-grass-pet-loo_1.jpg&quot;}}"
+                alt="Replacement Grass" /></a></div>
+</div>
