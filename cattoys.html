@@ -1,0 +1,49 @@
+<style>
+    .playerContainer {
+        position: relative;
+        display: none;
+        justify-content: center;
+        bottom: -10%;
+    }
+
+    .imageContainer {
+        cursor: pointer;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-12 col-md-8">
+        <h2>With a huge range of innovative, interactive cat toys, including Fling-Ama-String and FroliCat, your feline
+            friends will be kept active and entertained while they stalk, chase and pounce!</h2>
+        <ul>
+            <li><span style="font-size: 16px;">Our interactive cat toy play range includes laser toys and teaser toys
+                    that incorporate the use of darting lasers, mirrors and timing sequences to keep your cat actively
+                    engaged.</span></li>
+            <li><span style="font-size: 16px;">Set the FroliCat DART to random speed, pop it on the ground and watch
+                    your cat stalk and pounce as the random laser pattern flicks around the room.</span></li>
+            <li><span style="font-size: 16px;">Pick up the FroliCat BOLT and make your own fun by running the mirrored
+                    laser around the house for your cats and dogs to chase. </span></li>
+        </ul>
+        <p><span style="font-size: 16px;">All our interactive cat toys will keep both you and your cats entertained and
+                engaged!</span></p>
+    </div>
+    <div class="col-sm-12 col-md-4 text-center">
+        <div class="imageContainer">
+            <img class="catToyImage replaceImg" src="{{media url=&quot;wysiwyg/FroliCat_Cheese_Video.jpg&quot;}}"
+                alt="Frolicat Toy Video">
+            <div class="playerContainer">
+                <iframe width="354" height="199" src="https://www.youtube.com/embed/Adpx4X3f1Jw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(function () {
+        jQuery('.replaceImg').on('click', function () {
+            jQuery(this).hide();
+            jQuery(this).next(".playerContainer").find("iframe").attr('src', jQuery(".playerContainer iframe").attr('src') + '?autoplay=1');
+            jQuery('.playerContainer').show();
+        });
+    }, 1500);
+</script>
