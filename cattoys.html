@@ -1,40 +1,127 @@
 <style>
-    .playerContainer {
-        position: relative;
-        display: none;
-        justify-content: center;
-        bottom: -10%;
+    @media (min-width: 992px) {
+        .topSection {
+            display: inline-flex;
+        }
+
+        .headerText {
+            margin: 15px;
+            max-width: 66%;
+        }
+
+        .catToyImage {
+            width: 100%;
+        }
+
+        .hiddenSection {
+            margin: 15px;
+        }
+
+        .hiddenSection h2 {
+            text-align: center;
+        }
+
+        .froliCatVideo iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .playerContainer {
+            position: relative;
+            display: none;
+            justify-content: center;
+            bottom: -10%;
+        }
+
+        .imageContainer {
+            cursor: pointer;
+            width: 33%;
+            padding-right: 15px;
+        }
     }
 
-    .imageContainer {
-        cursor: pointer;
+    @media (max-width: 991px) {
+
+        .topSection {
+            display: block;
+        }
+
+        .headerText {
+            padding: 5px;
+        }
+
+        .laserToyImage img {
+            margin-top: 0px !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hiddenSection {
+            margin: 5px;
+
+        }
+
+        .hiddenSection h2 {
+            text-align: center;
+        }
+
+        .froliCatVideo {
+            max-width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+            margin: 10px;
+        }
+
+        .froliCatVideo iframe {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .playerContainer {
+            position: relative;
+            display: none;
+            justify-content: center;
+            bottom: -10%;
+        }
+
+        .imageContainer {
+            cursor: pointer;
+        }
     }
 </style>
-<div class="row">
-    <div class="col-sm-12 col-md-8">
+<div class="topSection">
+    <div class="headerText">
         <h2>With a huge range of innovative, interactive cat toys, including Fling-Ama-String and FroliCat, your feline
             friends will be kept active and entertained while they stalk, chase and pounce!</h2>
         <ul>
-            <li><span style="font-size: 16px;">Our interactive cat toy play range includes laser toys and teaser toys
-                    that incorporate the use of darting lasers, mirrors and timing sequences to keep your cat actively
-                    engaged.</span></li>
-            <li><span style="font-size: 16px;">Set the FroliCat DART to random speed, pop it on the ground and watch
-                    your cat stalk and pounce as the random laser pattern flicks around the room.</span></li>
-            <li><span style="font-size: 16px;">Pick up the FroliCat BOLT and make your own fun by running the mirrored
-                    laser around the house for your cats and dogs to chase. </span></li>
+            <li>Our interactive cat toy play range includes laser toys and teaser toys
+                that incorporate the use of darting lasers, mirrors and timing sequences to keep your cat actively
+                engaged.</li>
+            <li>Set the FroliCat DART to random speed, pop it on the ground and watch
+                your cat stalk and pounce as the random laser pattern flicks around the room.</li>
+            <li>Pick up the FroliCat BOLT and make your own fun by running the mirrored
+                laser around the house for your cats and dogs to chase.</li>
         </ul>
-        <p><span style="font-size: 16px;">All our interactive cat toys will keep both you and your cats entertained and
-                engaged!</span></p>
+        <p>All our interactive cat toys will keep both you and your cats entertained and
+            engaged!</p>
     </div>
-    <div class="col-sm-12 col-md-4 text-center">
-        <div class="imageContainer">
-            <img class="catToyImage replaceImg" src="{{media url=&quot;wysiwyg/FroliCat_Cheese_Video.jpg&quot;}}"
-                alt="Frolicat Toy Video">
-            <div class="playerContainer">
-                <iframe width="354" height="199" src="https://www.youtube.com/embed/Adpx4X3f1Jw" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+    <div class="imageContainer">
+        <img class="catToyImage replaceImg" src="{{media url=&quot;wysiwyg/FroliCat_Cheese_Video.jpg&quot;}}"
+            alt="Frolicat Toy Video">
+        <div class="playerContainer">
+            <iframe width="354" height="199" src="https://www.youtube.com/embed/Adpx4X3f1Jw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 </div>
